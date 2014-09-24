@@ -5,9 +5,11 @@ var mongoose = require('mongoose'),
 
 var cShareSchema = new Schema({
   title: String,
+  tags: [],
   content: String,
   create: String,
-  time: Date
+  time: Date,
+  active: Boolean
 });
 
 module.exports = mongoose.model('cShare', cShareSchema);

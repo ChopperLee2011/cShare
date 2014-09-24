@@ -7,7 +7,8 @@ angular.module('fullstackApp', [
   'ngRoute',
   'btford.socket-io',
   'ui.bootstrap',
-  'textAngular'
+  'textAngular',
+  'ngTagsInput'
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider

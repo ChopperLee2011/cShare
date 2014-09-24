@@ -9,5 +9,11 @@ angular.module('fullstackApp')
       })
       .when('/cShare/list',{
       	templateUrl:'app/cShare/list-share.html'
+      })
+      .when('/cShare/view/:share_id',{
+        templateUrl:'app/cShare/show-share.html'
+      })      
+      .when('/cShare/test',{
+        templateUrl:'app/cShare/test.html'
       });
   });

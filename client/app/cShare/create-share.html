@@ -13,12 +13,16 @@
                     <div class="controls">
                         <input type="text" ng-model="title" id="title" class="form-control" placeholder="Title" required>
                     </div>
-
+                    <label class="control-label" for="tags">Tags</label>
+                    <tags-input ng-model="tags">
+                        <auto-complete source="loadTags($query)"></auto-complete>
+                    </tags-input>
                     <label class="control-label" for="content">Content</label>
                     <div class="controls">
                         <div text-angular="" ng-model="content"></div>
                     </div>
                 </div>
+
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary">
                 </div>

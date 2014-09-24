@@ -12,6 +12,10 @@ angular.module('fullstackApp')
     {
       'title': 'share list',
       'link': '/cShare/list'
+    },
+    {
+      'title' : 'test',
+      'link' : '/cShare/test'
     }];
 
     $scope.isCollapsed = true;

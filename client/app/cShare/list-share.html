@@ -5,7 +5,7 @@
         <h1>Share Things List</h1>
     </div>
     <div class="list-group">
-        <a data-ng-repeat="sharething in sharethings" class="list-group-item">
+        <a ng-repeat="sharething in sharethings" ng-href="/cShare/view/{{sharething._id}}" class="list-group-item">
             <small class="list-group-item-text">
                 Posted on
                 <span data-ng-bind="sharething.time | date:'medium'"></span>
