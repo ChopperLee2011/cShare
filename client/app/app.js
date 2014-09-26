@@ -9,6 +9,7 @@ angular.module('fullstackApp', [
   'ui.bootstrap',
   'textAngular',
   'ngTagsInput'
+
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider

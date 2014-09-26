@@ -1,0 +1,20 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<section ng-controller="cShareCtrl" class="col-md-4 col-md-offset-4" ng-init="findOne()" ng-model="sharething">
+    <div class="page-header">
+        <h1>{{ tags }}</h1>
+    </div>
+    <h5>{{ sharething.title }}</h5>
+
+    <div ng-show="shareMpg">
+        <iframe width="560" height="315" ng-src="{{audioAddr | trusted}}" frameborder="0" allowfullscreen>
+        </iframe>
+    </div>
+    <div ng-show="shareTxt">
+        {{sharething.textContent}}
+    </div>
+    
+    <div>
+    <button class="glyphicon glyphicon-remove" ng-click="removeOne(sharething)" aria-label="Remove"></button>
+    </div>
+</section>
